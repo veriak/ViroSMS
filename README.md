@@ -7,7 +7,7 @@ Use this library for work with Comm port on windows and using AT Commands to Sen
 		char szIMEI[MAX_PATH];
 
 		if (pSMSEngine->GetIMEI(szIMEI)) {
-			if (pSMSEngine->SendUnicodeMessage("989122222222", _T("Test SMS"))) {
+			if (pSMSEngine->SendUnicodeMessage("+989122222222", _T("Test SMS"))) {
 				ReadMessageList ml;
 
 				if (pSMSEngine->GetReadMessageList(&ml)) {
