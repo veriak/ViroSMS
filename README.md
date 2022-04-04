@@ -1,6 +1,10 @@
 # ViroSMS
 Use this library for work with Comm port on windows and using AT Commands to Sending and Receiving one or multipart SMS(PDU, Unicode)
 
+	#include "SMSEngine.h"
+
+	using namespace SMSEngine;
+	
 	CSMSEngine *pSMSEngine = new CSMSEngine(_T("com1"), 9600);
 
 	if (pSMSEngine->CheckGSMModemActivity()) {
